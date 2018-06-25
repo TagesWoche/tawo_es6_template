@@ -1,58 +1,33 @@
 @import 'reset';
+@import 'elements';
 @import 'font-face';
+@import '~modularscale-sass/stylesheets/modularscale';
 @import 'variables';
 @import 'breakpoint';
 
 
 // font formats
 
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 h1 {
   @include NeueHaasGrotDisp-65Medium-Web;
-  font-size: $titel-size-mobile;
-  color: black;
-  line-height: $titel-lineheight-S;
-  max-width:$max-width-content - 50;
-  @include breakpoint($breakpoint--m) {
-    font-size: $titel-size;
-    line-height: $titel-lineheight-M;
+    font-size: ms(8);
+    line-height: 1.2;
+    @include breakpoint($breakpoint--m) {
+      font-size: ms(11);
+    }
   }
-}
 
-h2, h2 a {
-  @include NeueHaasGrotDisp-55Roman-Web;
-  margin: 20px auto 0 auto;
-  font-size: 28px;
-  color:black;
-  line-height:32px;
-  font-size: $titel-size-mobile - 10;
-  line-height: $titel-lineheight-S - 10;
-  max-width:$max-width-content - 50;
-  @include breakpoint($breakpoint--m) {
-    font-size: $titel-size - 18;
-    line-height: $titel-lineheight-M - 18;
-    max-width:888px;
-  }
-}
-
-h2 a {
-    color:#f7be00;
-    text-decoration: none;
-}
-
-h2 a:hover {
-    text-decoration: underline;
-}
-
-p, li, a, span {
+h2 {
   @include NeueHaasGrotDisp-65Medium-Web;
-  font-size: $laufschrift-size-mobile;
-  line-height:$laufschrift-lineheight-S;
-  margin-bottom:5px;
-}
-
-h3 {
-  @include NeueHaasGrotDisp-65Medium-Web;
-  font-size: 1.35em;
-  margin: 0 0 10px;
-  font-weight: 100;
+    font-size: ms(5);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-top: 60px;
 }

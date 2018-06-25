@@ -1,3 +1,9 @@
+$modularscale: (
+  base: 1.6rem,
+  ratio: 1.125
+);
+
+
 $color__white: #FFF;
 $color__border: #000;
 $color__primary: rgb(48, 163, 112);
@@ -147,19 +153,6 @@ $space--xxl: 80px;
   font-weight: bold;
   font-style: italic;
 }
-
-$titel-weight: 700;
-$titel-size:42px;
-$titel-size-mobile:28px;
-$laufschrift: 'PT Serif', serif;
-$laufschrift-weight: 100;
-$laufschrift-size:18px;
-$laufschrift-size-mobile:16px;
-$laufschrift-lineheight-S: 18px;
-$laufschrift-lineheight-M: 20px;
-
-$titel-lineheight-S: 35px;
-$titel-lineheight-M: 50px;
 
 // animation
 
